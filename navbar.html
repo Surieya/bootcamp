@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>day3--navbar</title>
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing: border-box;
+    }
+    body{
+      font-family:arial;
+    }
+    nav{
+      background-color: black;
+      color:white;
+      height:4.5rem;
+      
+    }
+    .container{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding-left:5%;
+      padding-right:5%;
+      height:4.5rem;
+    }
+    .name{
+      color:orangered
+    }
+    .link{
+      display:inline-block;
+      list-style-type:none;
+      margin:3px;
+    }
+    .link a{
+      text-decoration: none;
+      color:white;
+    }
+    .sign_in_btn{
+      display:inline-block;
+      text-decoration:none;
+      color:white;
+      padding:0.7em 2em;
+      background-color:orangered;
+      border-radius:100px;
+      transition:0.5s transform;
+    }
+    .sign_in_btn:hover{
+      transform:scale(1.1);
+      cursor:pointer;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="container">
+      <h2 class="name">Surieya</h2>
+    <ul>
+      <li class="link"><a href="#">Home</a></li>
+      <li class="link"><a href="#">About</a></li>
+      <li class="link"><a href="#">Product</a></li>
+      <li class="link"><a href="#">Services</a></li>
+      <li class="link"><a href="#">Contact Us</a></li>
+    </ul>
+    <a href="#" class="sign_in_btn">Sign in</a>
+    </div>
+  </nav>
+</body>
+</html>
