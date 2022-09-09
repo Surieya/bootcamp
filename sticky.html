@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day-5-sticky-notes</title>
+  <style>
+     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+    *{
+      margin:0;
+      padding:0;
+      box-sizing: border-box;
+    }
+    .color{
+      color:#006266;
+      color:#6F1E51;
+      color:#C4E538;
+      color:#1B1464;
+    }
+    body{
+      font-family: 'Poppins';
+    }
+    h2{
+      font-size:18px;
+    }
+    p{
+      font-size:15px;
+    }
+    section{
+      width:100vw;
+      height:100vh;
+      padding:2rem;
+      background-color:lightgray;
+    }
+    ul{
+      display:flex;
+      flex-wrap: wrap;
+      justify-content:center;
+      gap:10px;
+    }
+    ul li{
+      list-style:none;
+    }
+    ul li a{
+      text-decoration:none;
+      color:#1B1464;
+      background-color:#C4E538;
+      display:inline-block;
+      height:150px;
+      width:150px;
+      padding:10px;
+      box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+      transform:rotate(-8deg);
+      transition:transform 0.2s linear;
+      border-radius:5px;
+    }
+    ul li:nth-child(2n) a{
+      position:relative;
+      top:15px;
+      left:5px;
+      transform:rotate(6deg);
+      background-color: #FFC312;
+    }
+    ul li:nth-child(1) a{
+      position:relative;
+      top:15px;
+      left:5px;
+      transform:rotate(25deg);
+      background-color:#0652DD;
+    }
+    ul li:nth-last-child(1) a{
+      position:relative;
+      top:15px;
+      left:5px;
+      transform:rotate(-25deg);
+      background-color:#eccc68;
+
+    }
+    ul li a:hover,ul li a:focus{
+      transform:scale(1.25);
+      z-index:100;
+      position:relative;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
+
+    }
+
+    
+  </style>
+</head>
+<body>
+  <section>
+    <ul>
+      <li>
+        <a href="#" contenteditable="true">
+          <h2>Title-1</h2>
+          <p>Sample Paragraph</p>
+        </a>
+      </li>
+      <li>
+        <a href="#" contenteditable="true">
+          <h2>Title-2</h2>
+          <p>Sample Paragraph</p>
+        </a>
+      </li>
+      <li>
+        <a href="#" contenteditable="true">
+          <h2>Title-3</h2>
+          <p>Sample Paragraph</p>
+        </a>
+      </li>
+      <li>
+        <a href="#" contenteditable="true">
+          <h2>Title-4</h2>
+          <p>Sample Paragraph</p>
+        </a>
+      </li>
+      <li>
+        <a href="#" contenteditable="true">
+          <h2>Title-5</h2>
+          <p>Sample Paragraph</p>
+        </a>
+      </li>
+      <li>
+        <a href="#" contenteditable="true">
+          <h2>Title-6</h2>
+          <p>Sample Paragraph</p>
+        </a>
+      </li>
+      <li>
+        <a href="#" contenteditable="true">
+          <h2>Title-7</h2>
+          <p>Sample Paragraph</p>
+        </a>
+      </li>
+      <li>
+        <a href="#" contenteditable="true">
+          <h2>Title-8</h2>
+          <p>Sample Paragraph</p>
+        </a>
+      </li>
+    </ul>
+  </section>
+</body>
+</html>
