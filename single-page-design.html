@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      padding:0;
+      margin:0;
+      box-sizing: border-box;
+    }
+    html{
+      scroll-behavior:smooth;
+    }
+    section{
+      width:100%;
+      height:100vh;
+      padding-top:70px;
+    }
+    .home{
+      background-color:lightpink;
+    }
+    .services{
+       background-color: aqua;
+    }
+    .pricing{
+       background-color:paleturquoise;
+    }
+    .product_details{
+       background-color:lavenderblush;
+    }
+    .contact_form{
+       background-color:cornflowerblue;
+    }
+    header{
+      width:100%;
+      display:flex;
+      justify-content: space-between;
+      align-items:center;
+      padding:10px;
+      height:70px;
+      position:fixed;
+      top:0;
+      background-color:rgba(51,51,51,0.2);
+    }
+    .menu li{
+      list-style-type:none;
+      display:inline-block;
+      margin-left:20px;
+    }
+    .menu li a{
+     text-decoration:none;
+     color:#ffff;
+    }
+  </style>
+</head>
+<body>
+  <section class="home" id="home">
+    Home
+    <header>
+      <img>
+      <ul class="menu">
+        <li><a href="#home">home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#product_details">Products</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#contact_form">Contact</a></li>
+      </ul>
+    </header>
+  </section>
+  <section class="services" id="services">
+    Services
+  </section>
+  <section class="pricing" id="pricing">
+    Pricing
+  </section>
+  <section class="product_details" id="product_details">
+    Product Details
+  </section>
+  <section class="contact_form" id="contact_form">
+    Contact Form
+  </section>
+</body>
+</html>
