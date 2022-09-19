@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grids</title>
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing: border-box;
+    }
+    body{
+      font-family:Arial;
+      display:grid;
+      grid-template-rows:10em 50vh auto 10em;
+      grid-template-columns: 1fr 5fr 2fr 1fr;
+      grid-template-areas:"header header header header";
+    }
+  </style>
+</head>
+<body>
+  <header>
+     <h1 class="header-title">CSS grid Template Areas</h1>
+  </header>
+
+  <div class="hero">
+    <h1>Grid Areas</h1>
+    <p>Making Life Easier</p>
+  </div>
+
+ <main>
+  <h1>From the blog</h1>
+  <div class="card">
+    <h2 class="card-title">Blog post Title</h2>
+    <div class="card-content">
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi delectus dolor aliquid accusantium ipsam quisquam illum quod fugiat maxime quidem!</p>
+      <a href="#">Read more</a>
+    </div>
+  </div>
+ </main>
+
+ <aside>
+  <h1>Sidebar Stuff</h1>
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta dolorem amet quia maxime libero quasi aliquam ullam. Vitae quos dolorum, nostrum saepe aspernatur, tenetur, illo atque optio aperiam voluptatum ipsa.
+  Natus elig, necessitatib nsequuntur tempora temporibus repudiandae hic adipisci voluptas, quas ipsam dolorem in laborum. Eveniet dolores minus delectus facere quasi ratione odio exercitationem quia tempora.\
+ </p>
+ </aside>
+
+ <footer>
+  <h1 class="footer-title">The End</h1>
+ </footer>
+</body>
+</html>
