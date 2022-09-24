@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>animatedCard</title>
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing: border-box;
+    }
+    body{
+      width:100vw;
+      height:100vh;
+      background-color: lightgray;
+      display: flex;
+      justify-content:center;
+      align-items:center;
+    }
+    .card{
+      width:600px;
+      min-height: 500px;
+      border:2px solid red;
+      overflow:hidden;
+      position:relative;
+      display: flex;
+      transition: all 0.5s ease;
+    }
+    /* .over-view{ 
+      width:100;
+      position:absolute;
+      transition: all 0.5s;
+    } */
+    ul{
+      background-color: brown;
+      height:100%;
+      position:absolute;
+      width:200px;
+      left:-200px;
+      padding: 5px 10px;
+      transition: 0.5s;
+      /* z-index: -1; */
+    }
+    img{
+      width:100%;
+      position:absolute;
+      transition: all 0.5s;
+      height: 100%;
+      top: 0;
+      right: 0;
+      object-fit: cover;
+    }
+    .list-item{
+      list-style:none;
+    }
+    a{
+      text-decoration: none;
+      color:black;
+      font-size: 18px;
+      font-weight: 600;
+      transition: 0.5s;
+    }
+    .card:hover img{
+      right:-200px;
+      object-fit: cover;
+    }
+    .card:hover ul{
+      left:0;
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="nav-bar">
+      <ul>
+        <li class="list-item"><a href="#">Home</a></li>
+        <li class="list-item"><a href="#">Product</a></li>
+        <li class="list-item"><a href="#">About Us</a></li>
+        <li class="list-item"><a href="#">Services</a></li>
+        <li class="list-item"><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+    <img src="\images\strawberries-1.webp" alt="" class="image">
+      
+    </div> 
+   
+  </div>
+</body>
+</html>
