@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slider_navBar</title>
+  <style>
+    *{
+      box-sizing:border-box;
+      padding:0;
+      margin:0;
+    }
+    body{
+      width:100vw;
+      height:100vh;
+      font-family: Arial;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    nav{
+      background-color: #2f3542;
+      color:white;
+      font-size: 18px;
+      width:100%;
+      display: flex;
+      justify-content: center;
+    }
+    ul{
+      display: flex;
+      justify-content: space-between;
+      width:70%;
+      max-width:500px;
+    }
+    li{
+      list-style-type: none;
+    }
+    .outerUl>li{
+      padding:1.5em;
+    }
+    .outerUl>li:nth-child(3){
+      background-color:green;
+      position: relative;
+    }
+    .innerDiv{
+      background-color:#2f3542;
+      position:absolute;
+      width:150px;
+      top:75px;
+      left:-17px;
+      display: none;
+    }
+    .innerUl{
+      display: block;
+      width:100%;
+      /* padding:1em; */
+    }
+    .innerUl>li{
+      margin-top:10px;
+      padding:.5em;
+    }
+    .outerUl>li:nth-child(3):hover .innerDiv{
+      display: flex;
+      justify-content: center;
+    }
+    .innerUl>li:hover{
+      background-color: red;
+    }
+  </style>
+</head>
+<body>
+  <nav class="outerNav">
+    <ul class="outerUl">
+      <li>Home</li>
+      <li>Blog</li>
+      <li>Courses
+        <div class="innerDiv">
+          <ul class="innerUl">
+            <li>Python</li>
+            <li>Java</li>
+            <li>C++</li>
+          </ul>
+        </div>
+      </li>
+      <li>Contact</li>
+      <li>About</li>
+    </ul>
+  </nav>
+</body>
+</html>
