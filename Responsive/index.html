@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Page</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+    *{
+      margin:0;
+      padding:0;
+      box-sizing: border-box;
+    }
+    :root{
+      --theme-color:#e74c3c;
+    }
+    body{
+      font-family: 'Poppins', sans-serif;
+    }
+    section{
+      width:100vw;
+      height:100vh;
+    }
+    .header{
+      background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6));
+      /* background-image: url("software-developer.jpg"); */
+      /* background-size: cover; */
+
+    }
+    nav{
+      width:100%
+    }
+  </style>
+</head>
+<body>
+  <section class="header" id="header">
+    <nav>
+      <div class="logo"><span>ARCH</span>TECH</div>
+      <div class="navbar">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Project</a></li>
+          <li><a href="#">Trend</a></li>
+          <li><a href="#">Feature</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Sign Up</a></li>
+        </ul>
+      </div>
+      <button class="btn-show">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </nav>
+    <div class="banner">
+      <h1>Philosophy Of
+        <span>Architecture</span>
+      </h1>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque reiciendis, accusamus magnam temporibus eius culpa porro maiores iste facilis distinctio quidem nesciunt, dolore eum id?</p>
+      <a href="#" class="link-btn">See all</a>
+      <div class="services">
+
+        <div class="service">
+          <h3>Lorem, ipsum.</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, pariatur!</p>
+          <a href="#">See All</a>
+        </div>
+
+        <div class="service">
+          <h3>Lorem, ipsum.</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, pariatur!</p>
+          <a href="#">See All</a>
+        </div>
+
+        <div class="service">
+          <h3>Lorem, ipsum.</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, pariatur!</p>
+          <a href="#">See All</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</body>
+</html>
