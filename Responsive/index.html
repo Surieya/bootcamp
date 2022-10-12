@@ -26,11 +26,124 @@
       background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6));
       /* background-image: url("software-developer.jpg"); */
       /* background-size: cover; */
+      position:relative;
 
     }
     nav{
-      width:100%
+      width:100%;
+      display:flex;
+      justify-content:space-between;
+      padding: 15px 50px;
+      align-items:baseline;
     }
+    .btn-show{
+      display:none;
+    }
+    .header .navbar ul{
+      display:flex;
+      list-style: none;
+    }
+    .logo{
+      text-transform: uppercase;
+      color:#fff;
+      font-weight:500;
+      font-size:25px;
+      letter-spacing: 1px;
+    }
+    .logo span{
+      font-weight:800;
+      color:var(--theme-color);
+    }
+    .header .navbar ul li{
+     padding: 10px 30px;
+     transition: 0.3s;
+
+    }
+    .header .navbar ul li a{
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+    .header .navbar ul li:hover a{
+      color:var(--theme-color);
+    }
+
+    .header .navbar ul .link-btn:hover{
+      color:var(--theme-color);
+      background-color: #fff;
+    }
+
+    .link-btn{
+      background-color: var(--theme-color);
+      color:#fff;
+      padding:5px 20px;
+      border-radius:3px;
+      text-decoration: none;
+      transition:0.3s
+    }
+    .banner{
+      color:#fff;
+      position:absolute;
+      left:0;
+      top:150px;
+      padding-left:50px;
+    }
+    .banner h1{
+      font-size:50px;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+    .banner h1 span {
+      font-weight:800;
+      color:var(--theme-color);
+    }
+    .banner p{
+      margin:30px 0;
+    }
+
+    .services{
+      position:0;
+      left:0;
+      bottom :0;
+      width:800px;
+      display: grid;
+      grid-template-columns: repeat(3,1fr); 
+    }
+    .services .service{
+      padding: 20px;
+    }
+    .services .service h3{
+      font-size: 16px;
+      font-weight: 600;
+      margin: 15px 0;
+    }
+    .services .service p{
+      color:black;
+      opacity: 0.5;
+      font-size:14px;
+      margin: 15px 0;
+    }
+    .services .service a{
+      color:#333;
+      font-size:14px;
+      font-weight:500;
+    }
+    .services .service:nth-child(1){
+      background-color:#26282c;
+      color:#fff;
+    }
+    .services .service:nth-child(2){
+      background-color:#e4e4e4;
+      color:rgba(255,255,255,0.6);
+    }
+    .services .service:nth-child(3){
+      background-color:#f1f1f1;
+    }
+
+
+
   </style>
 </head>
 <body>
@@ -44,7 +157,7 @@
           <li><a href="#">Trend</a></li>
           <li><a href="#">Feature</a></li>
           <li><a href="#">Contact</a></li>
-          <li><a href="#">Sign Up</a></li>
+          <li class="link-btn"><a href="#">Sign Up</a></li>
         </ul>
       </div>
       <button class="btn-show">

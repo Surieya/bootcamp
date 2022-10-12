@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>parallax</title>
+  <style>
+    body{
+      margin:0;
+    }
+    .wrapper{
+      height:100vh;
+      /* width:100vw; */
+      overflow-y: auto;
+      overflow-x: hidden;
+      perspective: 10px;
+    }
+    .header{
+      position:relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height:100%;
+      transform: preserve-3d;
+      /* z-index: -1; */
+    }
+    .background,.foreground{
+      position:absolute;
+      height:100%;
+      width:100%;
+      object-fit: cover;
+      z-index:-1;
+    }
+    .background{
+      transform: translateZ(-10px) scale(2);
+    }
+    .foreground{
+      transform: translateZ(-5px) scale(1.5);
+    }
+    .foreground{
+      opacity:0.7;
+    }
+   .title{
+    font-size: 7rem;
+    color:white;
+    text-shadow: 0 0 5px black;
+   }
+   section{
+    font-size: 2rem;
+    padding:2rem;
+    background-color:#333;
+    color:white;
+   }
+  </style>
+</head>
+<body>
+   <div class="wrapper">
+    <div class="header">
+      <img src="mountain1.webp" class="background">
+      <img src="tree.webp" class="foreground">
+      <h1 class="title">Welcome!</h1>
+    </div>
+    <section>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor nisi quae tempora velit, dolores, dolore blanditiis minus corrupti provident alias aut qui voluptate necessitatibus. Eius repellat voluptatibus accusamus perferendis dolorem placeat est suscipit eaque iste libero illo incidunt excepturi, neque blanditiis a numquam ab aliquid ratione! Natus, rem adipisci eligendi ipsum quas laborum ad iste, deleniti corrupti vel libero iusto asperiores tenetur iure aliquid, rerum voluptas deserunt corporis suscipit. Sequi nisi doloremque obcaecati, similique numquam possimus corporis qui soluta ab quas officiis nemo laboriosam sit velit facilis veritatis voluptate iste at placeat fugit! Similique ipsam quidem aut dolorem eius repudiandae modi ea odio voluptates est, ratione accusantium magnam dolore reprehenderit consectetur et dolorum excepturi. Perferendis facilis facere ipsa est atque quaerat laborum veniam praesentium, placeat, numquam consequatur quisquam. Ducimus eaque mollitia magnam corporis maiores voluptatem eligendi autem itaque optio, culpa quia sapiente eos laudantium quos sunt. Possimus labore optio ab cum quas officiis nisi culpa voluptatum. Eaque nobis ad veritatis fuga illo minus commodi quia doloremque quos iure maiores, veniam ratione adipisci mollitia voluptas inventore ipsum hic omnis dicta laborum culpa, voluptatum dolorum eveniet voluptatibus! Consequatur ducimus laudantium, at quam non numquam facere nesciunt rem quis harum asperiores accusamus corporis!
+    </section>
+   </div>
+</body>
+</html>
